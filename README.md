@@ -1,4 +1,4 @@
-# jb-input
+# jb-loading
 
 svg loading web component:
 
@@ -29,7 +29,7 @@ import 'jb-loading';
 in your html or jsx
 
 ```html
-<jb-input class="" label="لیبل" message="متن ثابت زیر کادر متن"></jb-input>
+<jb-loading ></jb-loading>
 ```
 
 #### using cdn:
