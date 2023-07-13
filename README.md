@@ -19,7 +19,7 @@ svg loading web component:
 npm i jb-loading
 ```
 
-in one of your js in pag
+in one of your js in pages
 
 ```js
 import 'jb-loading';

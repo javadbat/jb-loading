@@ -12,7 +12,7 @@
     "loading",
     "web component"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bugs": "https://github.com/javadbat/jb-loading/issues",
   "license": "MIT",
   "files": [
