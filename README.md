@@ -47,3 +47,5 @@ if you want to set a custom style to this web-component all you need is to set c
 | css variable name                  | description                                                                                   |
 | -------------                      | -------------                                                                                 |
 | --jb-loading-color                 | loading color default is black `#000`                                                         |
+| --jb-loading-width                 | loading width default `100%`                                                                  |
+| --jb-loading-height                | loading height default is `100%`                                                              |
