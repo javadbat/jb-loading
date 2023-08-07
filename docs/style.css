@@ -20,7 +20,7 @@
   .component-wrapper{
     width:500px;
     max-width: calc(100% - 64px);
-    direction: rtl;
+    direction: ltr;
   }
 
   
