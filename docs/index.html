@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jb-date-input sample</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <h1>JB-Loading</h1>
+        <h2>simple purejs loading</h2>
+        <p>Easy to use web component for showing loading in your web pages</p>
+            <h2>Usage</h2>
+        <p>Since jb-loading is a web-component you can use it in pure html site and any JS framework like React, Angular, Vue,... so you have 2 way to using it: </p>
+        <ul>
+            <li>use  <a href="https://www.npmjs.com/package/jb-loading" target="_blank">npm</a> if your app is nodejs and support it's ecosystem</li>
+            <li>add Components's script from CDN</li>
+        </ul>
+        <p>in first way you just have to install jb-loading and import it's scripts anyway in app and then use it anywhere with simple HTML Tag 	&lt;jb-loading	&gt;	&lt;/jb-loading	&gt;  <a href="https://www.npmjs.com/package/jb-loading" target="_blank">read more detail here</a></p>
+        <p>
+            in second way just add following script tag in your html and then write 	&lt;jb-loading	&gt;	&lt;/jb-loading	&gt; tag anywhere in your HTML file
+        </p>
+        <code>
+            &lt;script src="https://unpkg.com/jb-loaidng/dist/JBLoading.umd.js"&gt;&lt;/script&gt;
+        </code>
+        <h2>examples</h2>
+        <div class="component-wrapper">
+            <jb-loading></jb-loading>
+        </div>
+        <h3>fit wrapper size</h3>
+        <div class="component-wrapper" style="width:80px;height:80px;">
+            <jb-loading></jb-loading>
+        </div>
+        <h3>size with css vaiable</h3>
+        <div class="component-wrapper" >
+            <jb-loading style="--jb-loading-width:44px;--jb-loading-height:44px;"></jb-loading>
+        </div>
+        <h3>with different color</h3>
+        <div class="component-wrapper" >
+            <jb-loading style="--jb-loading-width:80px;--jb-loading-height:80px;--jb-loading-color:#f15"></jb-loading>
+        </div>
+        <div class="desc">
+            you can read more and get this package from
+            <a href="https://www.npmjs.com/package/jb-loading" target="_blank">npm</a>
+            or
+            <a href="https://github.com/javadbat/jb-loading" target="_blank">github</a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jb-loading/dist/JBLoading.umd.js"></script>
+</body>
+
+</html>

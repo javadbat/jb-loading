@@ -1,12 +1,13 @@
 :host{
-    width: 100%;
-    height: 100%;
+
+    width: var(--jb-loading-width, 100%);
+    height: var(--jb-loading-height, 100%);
 }
 .jb-loading-web-component{
     .spin{
         .spin-loading{
-            width: var(--jb-loading-width, 100%);
-            height: var(--jb-loading-height, 100%);
+            width: 100%;
+            height: 100%;
             fill:transparent;
             circle{
                 stroke: var(--jb-loading-color,#000);

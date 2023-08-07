@@ -8,7 +8,8 @@ svg loading web component:
 
 - light and smooth animation
 
-<!-- sample: <https://codepen.io/javadbat/pen/dyNwddd> -->
+Demo & Sample    
+in github: <https://javadbat.github.io/jb-loading/>  
 
 ## instructions
 
