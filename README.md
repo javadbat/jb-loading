@@ -36,7 +36,7 @@ in your html or jsx
 #### using cdn:
 
 ```html
-    <script src="https://unpkg.com/jb-loading"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jb-loading/index.min.js"></script>
     <jb-loading></jb-loading>
 ```
 
