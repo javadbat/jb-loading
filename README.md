@@ -1,6 +1,7 @@
 # jb-loading
 
-svg loading web component:
+svg loading web component
+by using this component you will get following benefits:
 
 - you can set custom color by css variable.
 
