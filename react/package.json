@@ -1,0 +1,39 @@
+{
+  "name": "jb-loading-react",
+  "description": "loading react component",
+  "type": "module",
+  "author": {
+		"name": "mohammad javad bathaei",
+		"email": "javadbat@gmail.com"
+	},
+  "keywords": [
+    "jb",
+    "jb-loading",
+    "react component",
+    "loading",
+    "loading animation",
+    "animation"
+  ],
+  "version": "1.0.3",
+  "bugs": "https://github.com/javadbat/jb-loading-react/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib/",
+    "dist/"
+  ],
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "main": "index.js",
+  "types": "./dist/JBLoading.d.ts",
+  "repository": {
+		"type": "git",
+		"url": "git@github.com:javadbat/jb-loading-react.git"
+  },
+  "dependencies": {
+    "jb-loading": ">=1.0.1"
+  }
+}

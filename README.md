@@ -1,5 +1,9 @@
 # jb-loading
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/jb-loading)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/javadbat/jb-loading/master/LICENSE)
+[![NPM Downloads](https://img.shields.io/npm/dw/jb-loading)](https://www.npmjs.com/package/jb-loading)
+
 svg loading web component
 by using this component you will get following benefits:
 
@@ -11,6 +15,10 @@ by using this component you will get following benefits:
 
 Demo & Sample    
 in github: <https://javadbat.github.io/jb-loading/>  
+
+## using with JS frameworks
+
+to use this component in **react** see [`jb-loading/react`](https://github.com/javadbat/jb-loading/tree/main/react);
 
 ## instructions
 
