@@ -20,5 +20,7 @@ export const reactComponentList: ReactComponentBuildConfig[] = [
       react: "React",
       "prop-types": "PropTypes",
     },
+    umdName:"JBLoadingReact",
+    dir:"./react"
   },
 ];
