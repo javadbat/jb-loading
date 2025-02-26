@@ -13,7 +13,7 @@ declare global {
     }
 }
 
-export const JBLoading = React.forwardRef((props:PropsWithChildren<JBLoadingProps>, ref) => {
+export const JBLoading = React.forwardRef((props:PropsWithChildren<Props>, ref) => {
   const element = React.useRef<HTMLElement>(null);
   const [refChangeCount, refChangeCountSetter] = useState(0);
   useImperativeHandle(
@@ -29,7 +29,7 @@ export const JBLoading = React.forwardRef((props:PropsWithChildren<JBLoadingProp
   );
 });
 JBLoading.displayName = 'JBLoading';
-export type JBLoadingProps = {
+export type Props = {
     className?:string,
 }
 
