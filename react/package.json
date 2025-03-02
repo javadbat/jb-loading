@@ -24,7 +24,7 @@
     "dist/"
   ],
   "main": "index.js",
-  "types": "./dist/web-component/jb-loading/react/lib/JBLoading.d.ts",
+  "types": "./dist/JBLoading.d.ts",
   "repository": {
 		"type": "git",
 		"url": "git@github.com:javadbat/jb-loading.git"
