@@ -3,9 +3,12 @@ import type { ReactComponentBuildConfig, WebComponentBuildConfig } from "../../t
 export const webComponentList: WebComponentBuildConfig[] = [
   {
     name: "jb-loading",
-    path: "./lib/JBLoading.js",
-    outputPath: "./dist/JBLoading.js",
-    external: [],
+    path: "./lib/jb-loading.ts",
+    outputPath: "./dist/jb-loading.js",
+    external: ['jb-core', ],
+    globals: {
+      "jb-core": "JBCore",
+    },
     umdName: "JBLoading",
   },
 ];
@@ -14,11 +17,12 @@ export const reactComponentList: ReactComponentBuildConfig[] = [
     name: "jb-loading-react",
     path: "./react/lib/JBLoading.tsx",
     outputPath: "./react/dist/JBLoading.js",
-    external: ["jb-loading", "prop-types", "react"],
+    external: ["jb-loading", "prop-types", "react", "jb-core"],
     globals: {
       "jb-loading": "JBLoading",
       react: "React",
       "prop-types": "PropTypes",
+      "jb-core": "JBCore",
     },
     umdName:"JBLoadingReact",
     dir:"./react"

@@ -1,0 +1,3 @@
+:host{
+  --loading-color:var(--jb-loading-color, var(--jb-neutral));
+}
