@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 
 const meta: Meta<Props> = {
-  title: "Example/JBLoading",
+  title: "Components/JBLoading",
   component: JBLoading,
 };
 export default meta;

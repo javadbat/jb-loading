@@ -1,6 +1,6 @@
 import HTML from './jb-loading.html';
 import CSS from './jb-loading.scss';
-import {defineColors} from 'jb-core/theme';
+import {registerDefaultVariables} from 'jb-core/theme';
 
 class JBLoadingWebComponent extends HTMLElement {
   constructor() {
@@ -25,7 +25,7 @@ class JBLoadingWebComponent extends HTMLElement {
     const shadowRoot = this.attachShadow({
       mode: 'open'
     });
-    defineColors();
+    registerDefaultVariables();
     const html = `<style>${CSS}</style>` + '\n' + HTML;
     const element = document.createElement('template');
     element.innerHTML = html;
