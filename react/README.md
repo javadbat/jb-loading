@@ -13,12 +13,11 @@ svg loading React component:
 Demo :  Demo: [codeSandbox preview](https://3f63dj.csb.app/samples/jb-loading) for just see the demo and [codeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx) if you want to see and play with code
 
 
-## instructions
+## install
 
-### install
+### using npm:
 
-#### using npm:
-```cmd
+```sh
 npm i jb-loading
 ```
 
@@ -31,7 +30,7 @@ import {JBLoading} from 'jb-loading/react';
 
 in your jsx
 
-```html
+```jsx
 <JBLoading ></JBLoading>
 ```
 

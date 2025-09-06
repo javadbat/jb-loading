@@ -25,7 +25,8 @@ to use this component in **react** see [`jb-loading/react`](https://github.com/j
 ### install
 
 #### using npm:
-```cmd
+
+```sh
 npm i jb-loading
 ```
 
