@@ -1,5 +1,5 @@
 'use client';
-import React, { PropsWithChildren, useEffect, useImperativeHandle, useState } from 'react';
+import React, { PropsWithChildren, useEffect, useImperativeHandle, useState, type CSSProperties } from 'react';
 import 'jb-loading';
 
 declare module "react" {
@@ -21,11 +21,12 @@ export const JBLoading = React.forwardRef((props:PropsWithChildren<Props>, ref) 
     [element],
   );
   return (
-    <jb-loading ref={element} class={props.className}>{props.children}</jb-loading>
+    <jb-loading style={props.style} ref={element} class={props.className}>{props.children}</jb-loading>
   );
 });
 JBLoading.displayName = 'JBLoading';
 export type Props = {
     className?:string,
+    style?:CSSProperties
 }
 

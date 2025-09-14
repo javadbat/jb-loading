@@ -14,7 +14,7 @@
     "loading animation",
     "animation"
   ],
-  "version": "1.0.3",
+  "version": "1.1.0",
   "bugs": "https://github.com/javadbat/jb-loading/issues",
   "license": "MIT",
   "files": [
@@ -30,6 +30,6 @@
 		"url": "git@github.com:javadbat/jb-loading.git"
   },
   "dependencies": {
-    "jb-loading": ">=1.0.1"
+    "jb-loading": ">=1.7.0"
   }
 }

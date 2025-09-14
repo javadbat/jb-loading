@@ -1,4 +1,5 @@
-import CSS from './jb-loading.scss';
+import CSS from './jb-loading.css';
+import VariablesCSS from './variables.css';
 import {registerDefaultVariables} from 'jb-core/theme';
 import { renderHTML } from './render';
 
@@ -26,7 +27,7 @@ class JBLoadingWebComponent extends HTMLElement {
       mode: 'open'
     });
     registerDefaultVariables();
-    const html = `<style>${CSS}</style>` + '\n' + renderHTML();
+    const html = `<style>${CSS} ${VariablesCSS}</style>` + '\n' + renderHTML();
     const element = document.createElement('template');
     element.innerHTML = html;
     shadowRoot.appendChild(element.content.cloneNode(true));

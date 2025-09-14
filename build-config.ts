@@ -5,9 +5,10 @@ export const webComponentList: WebComponentBuildConfig[] = [
     name: "jb-loading",
     path: "./lib/jb-loading.ts",
     outputPath: "./dist/jb-loading.js",
-    external: ['jb-core', ],
+    external: ['jb-core',"jb-core/theme" ],
     globals: {
       "jb-core": "JBCore",
+      "jb-core/theme": "JBCoreTheme",
     },
     umdName: "JBLoading",
   },
