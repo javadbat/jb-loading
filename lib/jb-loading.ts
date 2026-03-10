@@ -3,7 +3,7 @@ import VariablesCSS from './variables.css';
 import {registerDefaultVariables} from 'jb-core/theme';
 import { renderHTML } from './render';
 
-class JBLoadingWebComponent extends HTMLElement {
+export class JBLoadingWebComponent extends HTMLElement {
   constructor() {
     super();
     this.initWebComponent();
@@ -27,7 +27,7 @@ class JBLoadingWebComponent extends HTMLElement {
       mode: 'open'
     });
     registerDefaultVariables();
-    const html = `<style>${CSS} ${VariablesCSS}</style>` + '\n' + renderHTML();
+    const html = `<style>${CSS} ${VariablesCSS}</style>\n${renderHTML()}`;
     const element = document.createElement('template');
     element.innerHTML = html;
     shadowRoot.appendChild(element.content.cloneNode(true));
