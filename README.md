@@ -2,16 +2,17 @@
 
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/jb-loading)
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/javadbat/jb-loading/main/LICENSE)
-[![NPM Downloads](https://img.shields.io/npm/dw/jb-loading)](https://www.npmjs.com/package/jb-loading)
+[![NPM Version](https://img.shields.io/npm/v/jb-loading)](https://www.npmjs.com/package/jb-loading)
+![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-loading)
 
 svg loading web component
 by using this component you will get following benefits:
 
 - you can set custom color by css variable.
 
-- it will fit its container DOM so you can use it in any size you want
+- it will fit its container DOM so you can use it in any size you want.
 
-- light and smooth animation
+- light and smooth animation.
 
 Demo & Sample    
 in github: <https://javadbat.github.io/jb-loading/>  
