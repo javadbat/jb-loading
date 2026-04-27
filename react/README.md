@@ -39,6 +39,9 @@ in your jsx
 
 in some cases in your project you need to change default style of web-component for example you need to change color.    
 if you want to set a custom style to this web-component all you need is to set css variable in parent scope of web-component 
+
 | css variable name                  | description                                                                                   |
-| -------------                      | -------------                                                                                 |
+| ----------------                   | ------------------                                                                            |
 | --jb-loading-color                 | loading color default is black `#000`                                                         |
+| --jb-loading-width                 | loading width default `100%`                                                                  |
+| --jb-loading-height                | loading height default is `100%`                                                              |
