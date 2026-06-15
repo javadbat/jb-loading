@@ -1,6 +1,9 @@
 # jb-loading React component
 
-this component is React.js wrapper for [jb-loading](https://www.npmjs.com/package/jb-loading) web component.
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/jb-loading)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/javadbat/jb-loading/main/LICENSE)
+[![NPM Version](https://img.shields.io/npm/v/jb-loading-react)](https://www.npmjs.com/package/jb-loading-react)
+![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-loading)
 
 svg loading React component:
 
