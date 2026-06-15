@@ -7,17 +7,16 @@
 
 svg loading React component:
 
-- you can set custom color by css variable.
+- you can set custom color by CSS variable.
 
 - it will fit its container DOM so you can use it in any size you want
 
 - light and smooth animation
 
-Demo :  Demo: [codeSandbox preview](https://3f63dj.csb.app/samples/jb-loading) for just see the demo and [codeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx) if you want to see and play with code
+Demo: [codeSandbox preview](https://3f63dj.csb.app/samples/jb-loading) for just see the demo and [codeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx) if you want to see and play with code
 
 
-## install
-
+## Installation
 ### using npm:
 
 ```sh
@@ -41,10 +40,14 @@ in your jsx
 ### set custom style
 
 in some cases in your project you need to change default style of web-component for example you need to change color.    
-if you want to set a custom style to this web-component all you need is to set css variable in parent scope of web-component 
+if you want to set a custom style to this web-component all you need is to set CSS variable in parent scope of web-component 
 
-| css variable name                  | description                                                                                   |
+| CSS variable name                  | description                                                                                   |
 | ----------------                   | ------------------                                                                            |
 | --jb-loading-color                 | loading color default is black `#000`                                                         |
 | --jb-loading-width                 | loading width default `100%`                                                                  |
 | --jb-loading-height                | loading height default is `100%`                                                              |
+
+## Shared Documentation
+
+For web-component behavior, events, slots, and CSS variables, see [`jb-loading`](https://github.com/javadbat/jb-loading).

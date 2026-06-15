@@ -8,7 +8,7 @@
 svg loading web component
 by using this component you will get following benefits:
 
-- you can set custom color by css variable.
+- you can set custom color by CSS variable.
 
 - it will fit its container DOM so you can use it in any size you want.
 
@@ -18,14 +18,12 @@ Demo & Sample
 - in github: <https://javadbat.github.io/jb-loading/>
 - [storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
 
-## using with JS frameworks
-
+## Using With JS Frameworks
 - [<img src="https://img.shields.io/badge/React.js-jb--loading%2Freact-000.svg?logo=react&logoColor=%2361DAFB" height="30" />](https://github.com/javadbat/jb-loading/tree/main/react)
 
 ## instructions
 
-### install
-
+### Installation
 #### using npm:
 
 ```sh
@@ -56,9 +54,9 @@ in your html or jsx
 ### set custom style
 
 in some cases in your project you need to change default style of web-component for example you need to change color.    
-if you want to set a custom style to this web-component all you need is to set css variable in parent scope of web-component.
+if you want to set a custom style to this web-component all you need is to set CSS variable in parent scope of web-component.
 
-| css variable name                  | description                                                                                   |
+| CSS variable name                  | description                                                                                   |
 | ----------------                   | ------------------                                                                            |
 | --jb-loading-color                 | loading color default is black `#000`                                                         |
 | --jb-loading-width                 | loading width default `100%`                                                                  |
