@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "README.md",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "lib/jb-loading.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "SVG loading spinner web component that fills its host size and is customized with CSS variables.",
+          "name": "JBLoadingWebComponent",
+          "tagName": "jb-loading",
+          "customElement": true,
+          "superclass": {
+            "name": "HTMLElement"
+          },
+          "attributes": [],
+          "members": [],
+          "methods": [],
+          "events": [
+            {
+              "name": "load",
+              "description": "Dispatched from connectedCallback when the component is connected."
+            },
+            {
+              "name": "init",
+              "description": "Dispatched from connectedCallback after load."
+            }
+          ],
+          "slots": [],
+          "cssParts": [],
+          "cssProperties": [
+            {
+              "name": "--jb-loading-color",
+              "description": "Spinner stroke color."
+            },
+            {
+              "name": "--jb-loading-width",
+              "description": "Host width."
+            },
+            {
+              "name": "--jb-loading-height",
+              "description": "Host height."
+            }
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "JBLoadingWebComponent",
+          "declaration": {
+            "name": "JBLoadingWebComponent",
+            "module": "lib/jb-loading.ts"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "jb-loading",
+          "declaration": {
+            "name": "JBLoadingWebComponent",
+            "module": "lib/jb-loading.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

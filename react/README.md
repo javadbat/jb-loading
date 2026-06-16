@@ -5,49 +5,69 @@
 [![NPM Version](https://img.shields.io/npm/v/jb-loading-react)](https://www.npmjs.com/package/jb-loading-react)
 ![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-loading)
 
-svg loading React component:
+React wrapper for `jb-loading`, an SVG loading spinner web component.
 
-- you can set custom color by CSS variable.
+## Demo
 
-- it will fit its container DOM so you can use it in any size you want
-
-- light and smooth animation
-
-Demo: [codeSandbox preview](https://3f63dj.csb.app/samples/jb-loading) for just see the demo and [codeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx) if you want to see and play with code
-
+- [Storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
+- [CodeSandbox preview](https://3f63dj.csb.app/samples/jb-loading)
+- [CodeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx)
 
 ## Installation
-### using npm:
 
 ```sh
 npm i jb-loading
 ```
 
-in one of your js in pages
+```jsx
+import { JBLoading } from 'jb-loading/react';
 
-```js
-import {JBLoading} from 'jb-loading/react';
-
+<JBLoading />;
 ```
 
-in your jsx
+## When to use
+
+Use `JBLoading` for a visual loading indicator inside React buttons, panels, empty states, or page regions.
+
+Pair it with text, `aria-busy`, or `aria-live` on the surrounding UI when users need an accessible loading announcement.
+
+## Props
+
+`JBLoading` forwards standard React element props to the underlying `<jb-loading>` element. It does not define component-specific props.
 
 ```jsx
-<JBLoading ></JBLoading>
+<div aria-busy="true" aria-live="polite">
+  <JBLoading className="saving-spinner" />
+  <span>Saving</span>
+</div>
 ```
 
+## Custom style
 
-### set custom style
+The React component uses the same CSS variables as the web component.
 
-in some cases in your project you need to change default style of web-component for example you need to change color.    
-if you want to set a custom style to this web-component all you need is to set CSS variable in parent scope of web-component 
+| CSS variable name | description |
+| --- | --- |
+| `--jb-loading-color` | Spinner stroke color. |
+| `--jb-loading-width` | Host width. Default is `100%`. |
+| `--jb-loading-height` | Host height. Default is `100%`. |
 
-| CSS variable name                  | description                                                                                   |
-| ----------------                   | ------------------                                                                            |
-| --jb-loading-color                 | loading color default is black `#000`                                                         |
-| --jb-loading-width                 | loading width default `100%`                                                                  |
-| --jb-loading-height                | loading height default is `100%`                                                              |
+```css
+.saving-spinner {
+  --jb-loading-width: 24px;
+  --jb-loading-height: 24px;
+  --jb-loading-color: var(--jb-primary);
+}
+```
 
 ## Shared Documentation
 
-For web-component behavior, events, slots, and CSS variables, see [`jb-loading`](https://github.com/javadbat/jb-loading).
+For web-component behavior, events, CSS variables, and the full API, see [`jb-loading`](https://github.com/javadbat/jb-loading).
+
+## AI agent notes
+
+- Import `JBLoading` from `jb-loading/react`; the wrapper imports and registers the underlying `jb-loading` web component.
+- Use standard React props such as `className`, `style`, and `ref`; there are no component-specific props.
+- Set size with `--jb-loading-width` and `--jb-loading-height`.
+- Set color with `--jb-loading-color`.
+- Add accessible loading text or state outside the component when the loading state must be announced.

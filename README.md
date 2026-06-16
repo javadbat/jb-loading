@@ -5,59 +5,117 @@
 [![NPM Version](https://img.shields.io/npm/v/jb-loading)](https://www.npmjs.com/package/jb-loading)
 ![GitHub Created At](https://img.shields.io/github/created-at/javadbat/jb-loading)
 
-svg loading web component
-by using this component you will get following benefits:
+SVG loading spinner web component.
 
-- you can set custom color by CSS variable.
+- Fills its host size.
+- Uses a lightweight SVG animation.
+- Customizable with CSS variables.
+- Works as a standalone web component or inside other JB components.
 
-- it will fit its container DOM so you can use it in any size you want.
+## When to use
 
-- light and smooth animation.
+Use `jb-loading` for a visual loading indicator inside a button, empty state, panel, or page area.
 
-Demo & Sample    
-- in github: <https://javadbat.github.io/jb-loading/>
-- [storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
+Pair it with text, `aria-busy`, or `aria-live` on the surrounding UI when users need an accessible loading announcement.
+
+## Demo
+
+- [GitHub Pages](https://javadbat.github.io/jb-loading/)
+- [Storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
 
 ## Using With JS Frameworks
+
 - [<img src="https://img.shields.io/badge/React.js-jb--loading%2Freact-000.svg?logo=react&logoColor=%2361DAFB" height="30" />](https://github.com/javadbat/jb-loading/tree/main/react)
 
-## instructions
+## Installation
 
-### Installation
-#### using npm:
+### Using npm
 
 ```sh
 npm i jb-loading
 ```
 
-in one of your js in pages
-
 ```js
 import 'jb-loading';
-
 ```
-
-in your html or jsx
 
 ```html
-<jb-loading ></jb-loading>
+<jb-loading></jb-loading>
 ```
 
-#### using cdn:
+### Using CDN
 
 ```html
-    <script src="https://cdn.jsdelivr.net/npm/jb-loading/dist/JBLoading.umd.js"></script>
-    <jb-loading></jb-loading>
+<script src="https://cdn.jsdelivr.net/npm/jb-loading/dist/JBLoading.umd.js"></script>
+<jb-loading></jb-loading>
 ```
 
+## API reference
 
-### set custom style
+### Attributes
 
-in some cases in your project you need to change default style of web-component for example you need to change color.    
-if you want to set a custom style to this web-component all you need is to set CSS variable in parent scope of web-component.
+`jb-loading` does not currently define public HTML attributes.
 
-| CSS variable name                  | description                                                                                   |
-| ----------------                   | ------------------                                                                            |
-| --jb-loading-color                 | loading color default is black `#000`                                                         |
-| --jb-loading-width                 | loading width default `100%`                                                                  |
-| --jb-loading-height                | loading height default is `100%`                                                              |
+### Properties
+
+`jb-loading` does not currently define public JavaScript properties.
+
+### Methods
+
+`jb-loading` does not currently define public methods.
+
+### Events
+
+| event | detail | description |
+| --- | --- | --- |
+| `load` | none | Dispatched from `connectedCallback` when the component is connected. |
+| `init` | none | Dispatched from `connectedCallback` after `load`. |
+
+## Slots and CSS parts
+
+`jb-loading` does not currently expose public slots or CSS parts.
+
+## Custom style
+
+Set CSS variables in the parent scope of the component.
+
+| CSS variable name | description |
+| --- | --- |
+| `--jb-loading-color` | Spinner stroke color. |
+| `--jb-loading-width` | Host width. Default is `100%`. |
+| `--jb-loading-height` | Host height. Default is `100%`. |
+
+```css
+jb-loading {
+  --jb-loading-width: 44px;
+  --jb-loading-height: 44px;
+  --jb-loading-color: var(--jb-primary);
+}
+```
+
+## Accessibility notes
+
+`jb-loading` is a visual spinner. Add accessible loading semantics to the surrounding UI when needed.
+
+```html
+<div aria-busy="true" aria-live="polite">
+  <jb-loading style="--jb-loading-width: 24px; --jb-loading-height: 24px;"></jb-loading>
+  <span>Loading</span>
+</div>
+```
+
+## Related Docs
+
+- See [`jb-loading/react`](https://github.com/javadbat/jb-loading/tree/main/react) if you want to use this component in React.
+- See [All JB Design System Component List](https://javadbat.github.io/design-system/) for more components.
+- Use [Contribution Guide](https://github.com/javadbat/design-system/blob/main/docs/contribution-guide.md) if you want to contribute to this component.
+
+## AI agent notes
+
+- Import `jb-loading` once before using `<jb-loading>`.
+- Do not expect attributes, properties, methods, slots, or CSS parts; the public customization API is CSS variables.
+- Set size with `--jb-loading-width` and `--jb-loading-height` or you can set width/height directly.
+- Set color with `--jb-loading-color`.
+- Add accessible loading text or state outside the component when the loading state must be announced.
+- This package includes [`custom-elements.json`](./custom-elements.json) and points to it with the package.json `customElements` field. The field is documented by the Custom Elements Manifest project in [Referencing manifests from npm packages](https://github.com/webcomponents/custom-elements-manifest#referencing-manifests-from-npm-packages).
+- In `custom-elements.json`, `exports.kind: "js"` describes the JavaScript/TypeScript class export and `exports.kind: "custom-element-definition"` maps the `jb-loading` tag name to that class.
