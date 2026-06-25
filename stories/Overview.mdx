@@ -1,0 +1,18 @@
+import {Meta, Title, Story, Controls, Stories, Source} from '@storybook/blocks';
+import * as LoadingStories from './JBLoading.stories';
+
+<Meta of={LoadingStories}/>
+
+<Title>JB Loading</Title>
+
+Loading indicator component with customizable size and color.
+
+<Story of={LoadingStories.CustomSize}/>
+<Controls of={LoadingStories.Normal}/>
+<Source of={LoadingStories.CustomSize}/>
+
+## Basic usage
+<Story of={LoadingStories.Normal}/>
+
+## Other samples & variants
+<Stories/>
