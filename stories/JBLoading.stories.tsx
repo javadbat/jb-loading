@@ -1,14 +1,14 @@
 import React, { type CSSProperties } from 'react';
-import { JBLoading, Props } from 'jb-loading/react';
+import { JBLoading } from 'jb-loading/react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 
-const meta: Meta<Props> = {
+const meta = {
   title: "Components/JBLoading",
   component: JBLoading,
-};
+} satisfies Meta<typeof JBLoading>;
 export default meta;
-type Story = StoryObj<typeof JBLoading>;
+type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
   args: {
