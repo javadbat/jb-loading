@@ -3,17 +3,7 @@ import React, { type PropsWithChildren, useImperativeHandle } from 'react';
 import type {JBElementStandardProps} from 'jb-core/react'
 import 'jb-loading';
 import type {JBLoadingWebComponent} from 'jb-loading'
-
-declare module "react" {
-    namespace JSX {
-      interface IntrinsicElements {
-        'jb-loading': JBLoadingType;
-      }
-      interface JBLoadingType extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> {
-        "class"?:string,
-      }
-    }
-}
+import './module-declaration.js';
 
 export const JBLoading = React.forwardRef((props:Props, ref) => {
   const element = React.useRef<HTMLElement>(null);
