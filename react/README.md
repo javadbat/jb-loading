@@ -54,8 +54,8 @@ The React component uses the same CSS variables as the web component.
 
 ```css
 .saving-spinner {
-  --jb-loading-width: 24px;
-  --jb-loading-height: 24px;
+  --jb-loading-width: 1.5rem;
+  --jb-loading-height: 1.5rem;
   --jb-loading-color: var(--jb-primary);
 }
 ```

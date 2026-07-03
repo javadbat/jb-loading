@@ -24,22 +24,22 @@ export const CustomSize:Story = {
   render:()=>{
   return (
     <div className="spin-loading-page">
-      <div style={{ width: '24px', height: '24px' }}>
+      <div style={{ width: '1.5rem', height: '1.5rem' }}>
         <JBLoading></JBLoading>
       </div>
-      <div style={{ width: '40px', height: '40px' }}>
+      <div style={{ width: '2.5rem', height: '2.5rem' }}>
         <JBLoading></JBLoading>
       </div>
-      <div style={{ width: '64px', height: '64px' }}>
+      <div style={{ width: '4rem', height: '4rem' }}>
         <JBLoading></JBLoading>
       </div>
-      <div style={{ width: '128px', height: '128px' }}>
+      <div style={{ width: '8rem', height: '8rem' }}>
         <JBLoading></JBLoading>
       </div>
-      <div style={{ width: '256px', height: '256px' }}>
+      <div style={{ width: '16rem', height: '16rem' }}>
         <JBLoading></JBLoading>
       </div>
-      <div style={{ width: '400px', height: '400px' }}>
+      <div style={{ width: '25rem', height: '25rem' }}>
         <JBLoading></JBLoading>
       </div>
     </div>

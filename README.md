@@ -87,8 +87,8 @@ Set CSS variables in the parent scope of the component.
 
 ```css
 jb-loading {
-  --jb-loading-width: 44px;
-  --jb-loading-height: 44px;
+  --jb-loading-width: 2.75rem;
+  --jb-loading-height: 2.75rem;
   --jb-loading-color: var(--jb-primary);
 }
 ```
@@ -99,7 +99,7 @@ jb-loading {
 
 ```html
 <div aria-busy="true" aria-live="polite">
-  <jb-loading style="--jb-loading-width: 24px; --jb-loading-height: 24px;"></jb-loading>
+  <jb-loading style="--jb-loading-width: 1.5rem; --jb-loading-height: 1.5rem;"></jb-loading>
   <span>Loading</span>
 </div>
 ```
