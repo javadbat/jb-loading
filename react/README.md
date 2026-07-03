@@ -60,6 +60,14 @@ The React component uses the same CSS variables as the web component.
 }
 ```
 
+## Slots and CSS parts
+
+`JBLoading` does not expose content slots. Style the spinner with the same CSS variables as the web component.
+
+## Accessibility notes
+
+The spinner is visual only. Add loading text, `aria-busy`, or `aria-live` to the surrounding React UI when the loading state must be announced.
+
 ## Shared Documentation
 
 For web-component behavior, events, CSS variables, and the full API, see [`jb-loading`](https://github.com/javadbat/jb-loading).
