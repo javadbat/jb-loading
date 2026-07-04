@@ -1,3 +1,7 @@
 :host{
+  /* Size */
+  --width: var(--jb-loading-width, 100%);
+  --height: var(--jb-loading-height, 100%);
+  /* Theme/Color */
   --loading-color:var(--jb-loading-color, var(--jb-neutral));
 }

@@ -1,7 +1,7 @@
 :host {
     display: block;
-    width: var(--jb-loading-width, 100%);
-    height: var(--jb-loading-height, 100%);
+    width: var(--width);
+    height: var(--height);
 }
 
 .jb-loading-web-component {
