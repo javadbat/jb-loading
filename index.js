@@ -1,1 +1,1 @@
-export * from './dist/jb-loading.js';
+export * from './web-component/dist/jb-loading.js';

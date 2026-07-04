@@ -3,8 +3,9 @@ import type { ReactComponentBuildConfig, WebComponentBuildConfig } from "../../t
 export const webComponentList: WebComponentBuildConfig[] = [
   {
     name: "jb-loading",
-    path: "./lib/jb-loading.ts",
-    outputPath: "./dist/jb-loading.js",
+    path: "./web-component/lib/jb-loading.ts",
+    outputPath: "./web-component/dist/jb-loading.js",
+    tsConfigPath: "./web-component/tsconfig.json",
     external: ['jb-core',"jb-core/theme" ],
     globals: {
       "jb-core": "JBCore",
