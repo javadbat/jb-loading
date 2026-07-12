@@ -1,0 +1,17 @@
+jb-loading.bootstrap-style {
+  --jb-loading-width: 3rem;
+  --jb-loading-height: 3rem;
+  --jb-loading-color: var(--jb-focus-color);
+}
+
+jb-loading.bootstrap-style.small-loading {
+  --jb-loading-width: 1.75rem;
+  --jb-loading-height: 1.75rem;
+  --jb-loading-color: #6c757d;
+}
+
+jb-loading.bootstrap-style.large-loading {
+  --jb-loading-width: 4.5rem;
+  --jb-loading-height: 4.5rem;
+  --jb-loading-color: var(--jb-success);
+}

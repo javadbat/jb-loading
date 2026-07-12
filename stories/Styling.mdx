@@ -1,0 +1,290 @@
+import { Meta, Source, Story, Title } from '@storybook/addon-docs/blocks';
+import * as StyleStories from './Styles.stories';
+import antDesignThemeCss from '../../../docs/styles/ant-design.css?raw';
+import auroraThemeCss from '../../../docs/styles/aurora.css?raw';
+import bootstrapThemeCss from '../../../docs/styles/bootstrap.css?raw';
+import candyThemeCss from '../../../docs/styles/candy.css?raw';
+import carbonThemeCss from '../../../docs/styles/carbon.css?raw';
+import cupertinoThemeCss from '../../../docs/styles/cupertino.css?raw';
+import fluentThemeCss from '../../../docs/styles/fluent.css?raw';
+import forestThemeCss from '../../../docs/styles/forest.css?raw';
+import materialThemeCss from '../../../docs/styles/material.css?raw';
+import porcelainThemeCss from '../../../docs/styles/porcelain.css?raw';
+import sunsetThemeCss from '../../../docs/styles/sunset.css?raw';
+import terminalThemeCss from '../../../docs/styles/terminal.css?raw';
+import antDesignLoadingCss from './styles/style-ant-design.css?raw';
+import auroraLoadingCss from './styles/style-aurora.css?raw';
+import bootstrapLoadingCss from './styles/style-bootstrap.css?raw';
+import candyLoadingCss from './styles/style-candy.css?raw';
+import carbonLoadingCss from './styles/style-carbon.css?raw';
+import cupertinoLoadingCss from './styles/style-cupertino.css?raw';
+import fluentLoadingCss from './styles/style-fluent.css?raw';
+import forestLoadingCss from './styles/style-forest.css?raw';
+import materialLoadingCss from './styles/style-material.css?raw';
+import porcelainLoadingCss from './styles/style-porcelain.css?raw';
+import sunsetLoadingCss from './styles/style-sunset.css?raw';
+import terminalLoadingCss from './styles/style-terminal.css?raw';
+
+<Meta title="Components/JBLoading/Styling" />
+
+<Title>Styling</Title>
+
+`JBLoading` styling is intentionally small. Use `--jb-loading-*` variables on the host to control the spinner size and stroke color.
+
+## Live Gallery
+
+<Story of={StyleStories.Gallery} />
+
+<Source of={StyleStories.Gallery} />
+
+## Common Design Tokens
+
+Use the core theme docs as the source of truth for shared design-system variables:
+
+- [Theme Colors](../../jb-core/theme/stories/colors.mdx) explains the general color palette variables, default colors, customization approaches, and color generation helpers.
+- [Theme Sizes](../../jb-core/theme/stories/sizes.mdx) explains shared size and radius variables.
+- [Theme Custom Galleries](https://javadbat.github.io/design-system/?path=/docs/theme-custom-material--docs) gathers the shared custom style recipes across components.
+
+Loading recipes should use those common tokens where possible, then map them into `--jb-loading-color`, `--jb-loading-width`, and `--jb-loading-height` where the spinner needs component-specific values.
+
+## Styling Model
+
+Use four layers when styling loading examples:
+
+- Common design tokens are documented in [Theme Colors](../../jb-core/theme/stories/colors.mdx) and [Theme Sizes](../../jb-core/theme/stories/sizes.mdx).
+- Reusable example theme packs live in [`docs/styles`](https://github.com/javadbat/design-system/tree/main/docs/styles) and can be shared across components.
+- Component recipe files live in [`modules/jb-loading/stories/styles`](https://github.com/javadbat/design-system/tree/main/modules/jb-loading/stories/styles).
+- Public component variables use `--jb-loading-*` on `jb-loading`.
+
+Each example uses one shared example theme pack from [`docs/styles`](https://github.com/javadbat/design-system/tree/main/docs/styles) and one loading-specific recipe from [`modules/jb-loading/stories/styles`](https://github.com/javadbat/design-system/tree/main/modules/jb-loading/stories/styles). The style story applies both classes directly to `JBLoading`.
+
+## Recommended Customization Path
+
+1. Use `--jb-loading-width` and `--jb-loading-height` to set the spinner footprint.
+2. Use `--jb-loading-color` for the spinner stroke color.
+3. Use common theme variables from [Theme Colors](../../jb-core/theme/stories/colors.mdx) and [Theme Sizes](../../jb-core/theme/stories/sizes.mdx) when the style should align with the design system.
+4. Put reusable theme-pack values in [`docs/styles`](https://github.com/javadbat/design-system/tree/main/docs/styles) only when they should be shared by multiple component demos.
+5. Add a new loading variable or official part only when a needed internal surface cannot be customized with current public variables.
+
+## Parts And States
+
+`JBLoading` does not currently expose CSS parts or custom states. Style the host with public variables.
+
+## CSS Variables
+
+These variables belong to `JBLoading`.
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>--jb-loading-width</code></td><td>Size</td><td>Host width.</td></tr>
+    <tr><td><code>--jb-loading-height</code></td><td>Size</td><td>Host height.</td></tr>
+    <tr><td><code>--jb-loading-color</code></td><td>Theme/Color</td><td>Spinner stroke color.</td></tr>
+  </tbody>
+</table>
+
+## Starter Recipe
+
+Use this minimal recipe when a product only needs brand alignment.
+
+```css
+jb-loading.brand-loading {
+  --jb-loading-width: 2rem;
+  --jb-loading-height: 2rem;
+  --jb-loading-color: #2563eb;
+}
+```
+
+## Style Recipes
+
+### Carbon
+
+<Story of={StyleStories.Carbon} />
+
+<Source of={StyleStories.Carbon} />
+
+#### Shared Tokens
+
+<Source code={carbonThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={carbonLoadingCss} language="css" />
+
+### Aurora
+
+<Story of={StyleStories.Aurora} />
+
+<Source of={StyleStories.Aurora} />
+
+#### Shared Tokens
+
+<Source code={auroraThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={auroraLoadingCss} language="css" />
+
+### Forest
+
+<Story of={StyleStories.Forest} />
+
+<Source of={StyleStories.Forest} />
+
+#### Shared Tokens
+
+<Source code={forestThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={forestLoadingCss} language="css" />
+
+### Sunset
+
+<Story of={StyleStories.Sunset} />
+
+<Source of={StyleStories.Sunset} />
+
+#### Shared Tokens
+
+<Source code={sunsetThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={sunsetLoadingCss} language="css" />
+
+### Porcelain
+
+<Story of={StyleStories.Porcelain} />
+
+<Source of={StyleStories.Porcelain} />
+
+#### Shared Tokens
+
+<Source code={porcelainThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={porcelainLoadingCss} language="css" />
+
+### Candy
+
+<Story of={StyleStories.Candy} />
+
+<Source of={StyleStories.Candy} />
+
+#### Shared Tokens
+
+<Source code={candyThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={candyLoadingCss} language="css" />
+
+### Terminal
+
+<Story of={StyleStories.Terminal} />
+
+<Source of={StyleStories.Terminal} />
+
+#### Shared Tokens
+
+<Source code={terminalThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={terminalLoadingCss} language="css" />
+
+### Material
+
+<Story of={StyleStories.Material} />
+
+<Source of={StyleStories.Material} />
+
+#### Shared Tokens
+
+<Source code={materialThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={materialLoadingCss} language="css" />
+
+### Fluent
+
+<Story of={StyleStories.Fluent} />
+
+<Source of={StyleStories.Fluent} />
+
+#### Shared Tokens
+
+<Source code={fluentThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={fluentLoadingCss} language="css" />
+
+### Bootstrap
+
+<Story of={StyleStories.Bootstrap} />
+
+<Source of={StyleStories.Bootstrap} />
+
+#### Shared Tokens
+
+<Source code={bootstrapThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={bootstrapLoadingCss} language="css" />
+
+### Cupertino
+
+<Story of={StyleStories.Cupertino} />
+
+<Source of={StyleStories.Cupertino} />
+
+#### Shared Tokens
+
+<Source code={cupertinoThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={cupertinoLoadingCss} language="css" />
+
+### Ant Design
+
+<Story of={StyleStories.AntDesign} />
+
+<Source of={StyleStories.AntDesign} />
+
+#### Shared Tokens
+
+<Source code={antDesignThemeCss} language="css" />
+
+#### Loading CSS
+
+<Source code={antDesignLoadingCss} language="css" />
+
+## Theme File Pattern
+
+Use [Theme Colors](../../jb-core/theme/stories/colors.mdx) and [Theme Sizes](../../jb-core/theme/stories/sizes.mdx) as the common design-token guides. Theme-pack files should keep reusable demo variables in [`docs/styles`](https://github.com/javadbat/design-system/tree/main/docs/styles), then each component should keep its own style CSS in its story [`styles`](https://github.com/javadbat/design-system/tree/main/modules/jb-loading/stories/styles) folder.
+
+```css
+/* https://github.com/javadbat/design-system/blob/main/docs/styles/carbon.css */
+.theme-name-style {
+  /* shared design-system variables */
+}
+
+/* https://github.com/javadbat/design-system/blob/main/modules/jb-loading/stories/styles/style-carbon.css */
+jb-loading.theme-name-loading {
+  /* loading host variables */
+}
+```
+
+This keeps common theme tokens reusable while making the `JBLoading` styling API visible in one page.

@@ -1,0 +1,17 @@
+jb-loading.sunset-style {
+  --jb-loading-width: 3rem;
+  --jb-loading-height: 3rem;
+  --jb-loading-color: var(--jb-focus-color);
+}
+
+jb-loading.sunset-style.small-loading {
+  --jb-loading-width: 1.75rem;
+  --jb-loading-height: 1.75rem;
+  --jb-loading-color: #ff8fab;
+}
+
+jb-loading.sunset-style.large-loading {
+  --jb-loading-width: 4.5rem;
+  --jb-loading-height: 4.5rem;
+  --jb-loading-color: #963f5a;
+}

@@ -1,6 +1,6 @@
 import React, { type CSSProperties } from 'react';
 import { JBLoading } from 'jb-loading/react';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
 
 const meta = {

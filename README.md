@@ -77,6 +77,8 @@ import 'jb-loading';
 
 ## Custom style
 
+For complete styling guidance, live examples, and copyable style recipes, see [Styling](https://javadbat.github.io/design-system/?path=/docs/components-jbloading-styling).
+
 Set CSS variables in the parent scope of the component.
 
 | CSS variable name | description |

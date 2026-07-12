@@ -1,0 +1,17 @@
+jb-loading.terminal-style {
+  --jb-loading-width: 3rem;
+  --jb-loading-height: 3rem;
+  --jb-loading-color: #22c55e;
+}
+
+jb-loading.terminal-style.small-loading {
+  --jb-loading-width: 1.75rem;
+  --jb-loading-height: 1.75rem;
+  --jb-loading-color: #86efac;
+}
+
+jb-loading.terminal-style.large-loading {
+  --jb-loading-width: 4.5rem;
+  --jb-loading-height: 4.5rem;
+  --jb-loading-color: #bbf7d0;
+}

@@ -1,0 +1,17 @@
+jb-loading.porcelain-style {
+  --jb-loading-width: 3rem;
+  --jb-loading-height: 3rem;
+  --jb-loading-color: #2f80ed;
+}
+
+jb-loading.porcelain-style.small-loading {
+  --jb-loading-width: 1.75rem;
+  --jb-loading-height: 1.75rem;
+  --jb-loading-color: #4d6882;
+}
+
+jb-loading.porcelain-style.large-loading {
+  --jb-loading-width: 4.5rem;
+  --jb-loading-height: 4.5rem;
+  --jb-loading-color: #0f2742;
+}
