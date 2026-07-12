@@ -108,6 +108,11 @@ export const Gallery: Story = {
   ),
 };
 
+export const Default: Story = {
+  name: "Default",
+  render: () => <LoadingStyleSample className="" />,
+};
+
 export const Carbon: Story = {
   name: "Carbon",
   render: () => <LoadingStyleSample className="carbon-style carbon-style" />,
