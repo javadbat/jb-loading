@@ -6,10 +6,11 @@ export const webComponentList: WebComponentBuildConfig[] = [
     path: "./web-component/lib/jb-loading.ts",
     outputPath: "./web-component/dist/jb-loading.js",
     tsConfigPath: "./web-component/tsconfig.json",
-    external: ['jb-core',"jb-core/theme" ],
+    external: ['jb-core',"jb-core/theme", "jb-core/i18n" ],
     globals: {
       "jb-core": "JBCore",
       "jb-core/theme": "JBCoreTheme",
+      "jb-core/i18n": "JBCoreI18N",
     },
     umdName: "JBLoading",
   },
