@@ -12,7 +12,7 @@
     "loading",
     "web component"
   ],
-  "version": "1.7.0",
+  "version": "1.8.0",
   "bugs": "https://github.com/javadbat/jb-loading/issues",
   "license": "MIT",
   "files": [
@@ -28,7 +28,7 @@
   "types": "./web-component/dist/jb-loading.d.ts",
   "customElements": "web-component/custom-elements.json",
   "dependencies": {
-    "jb-core":">=0.15.1"
+    "jb-core":">=0.30.0"
   },
   "repository": {
 		"type": "git",
