@@ -68,7 +68,11 @@ Each example uses one shared example theme pack from [`docs/styles`](https://git
 
 ## Parts And States
 
-`JBLoading` does not currently expose CSS parts or custom states. Style the host with public variables.
+`JBLoading` does not expose custom states. Prefer public variables for common changes, or target these parts when an integration needs the internal spinner surfaces:
+
+- `loading-wrapper` targets the wrapper around the SVG.
+- `loading-svg` targets the animated spinner SVG.
+- `loading-circle` targets the visible spinner circle.
 
 ## CSS Variables
 

@@ -29,7 +29,20 @@
             }
           ],
           "slots": [],
-          "cssParts": [],
+          "cssParts": [
+            {
+              "name": "loading-wrapper",
+              "description": "Wrapper around the spinner SVG."
+            },
+            {
+              "name": "loading-svg",
+              "description": "Animated spinner SVG."
+            },
+            {
+              "name": "loading-circle",
+              "description": "Visible spinner circle."
+            }
+          ],
           "cssProperties": [
             {
               "name": "--jb-loading-color",

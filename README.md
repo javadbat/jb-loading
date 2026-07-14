@@ -73,7 +73,13 @@ import 'jb-loading';
 
 ## Slots and CSS parts
 
-`jb-loading` does not currently expose public slots or CSS parts.
+`jb-loading` does not expose public slots. It exposes these CSS parts:
+
+| CSS part | description |
+| --- | --- |
+| `loading-wrapper` | Wrapper around the spinner SVG. |
+| `loading-svg` | Animated spinner SVG. |
+| `loading-circle` | Visible spinner circle. |
 
 ## Custom style
 
@@ -115,7 +121,7 @@ jb-loading {
 ## AI agent notes
 
 - Import `jb-loading` once before using `<jb-loading>`.
-- Do not expect attributes, properties, methods, slots, or CSS parts; the public customization API is CSS variables.
+- Do not expect attributes, properties, methods, or slots; customize with CSS variables and the documented CSS parts.
 - Set size with `--jb-loading-width` and `--jb-loading-height` or you can set width/height directly.
 - Set color with `--jb-loading-color`.
 - Add accessible loading text or state outside the component when the loading state must be announced.
