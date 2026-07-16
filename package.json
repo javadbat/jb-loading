@@ -26,6 +26,17 @@
   ],
   "main": "index.js",
   "types": "./web-component/dist/jb-loading.d.ts",
+  "exports": {
+    ".": {
+      "types": "./web-component/dist/jb-loading.d.ts",
+      "default": "./index.js"
+    },
+    "./react": {
+      "types": "./react/dist/JBLoading.d.ts",
+      "default": "./react/index.js"
+    },
+    "./*": "./*"
+  },
   "customElements": "web-component/custom-elements.json",
   "dependencies": {
     "jb-core":">=0.30.0"
