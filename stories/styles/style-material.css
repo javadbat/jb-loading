@@ -7,11 +7,11 @@ jb-loading.material-style {
 jb-loading.material-style.small-loading {
   --jb-loading-width: 1.75rem;
   --jb-loading-height: 1.75rem;
-  --jb-loading-color: var(--jb-red);
+  --jb-loading-color: var(--jb-secondary);
 }
 
 jb-loading.material-style.large-loading {
   --jb-loading-width: 4.5rem;
   --jb-loading-height: 4.5rem;
-  --jb-loading-color: #006a6a;
+  --jb-loading-color: var(--jb-primary);
 }
