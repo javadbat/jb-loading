@@ -1,17 +1,17 @@
 jb-loading.carbon-style {
-  --jb-loading-width: 3rem;
-  --jb-loading-height: 3rem;
+  --jb-loading-width: 2rem;
+  --jb-loading-height: 2rem;
   --jb-loading-color: var(--jb-primary);
 }
 
 jb-loading.carbon-style.small-loading {
-  --jb-loading-width: 1.75rem;
-  --jb-loading-height: 1.75rem;
+  --jb-loading-width: 1.125rem;
+  --jb-loading-height: 1.125rem;
   --jb-loading-color: var(--jb-focus-color);
 }
 
 jb-loading.carbon-style.large-loading {
-  --jb-loading-width: 4.5rem;
-  --jb-loading-height: 4.5rem;
+  --jb-loading-width: 3rem;
+  --jb-loading-height: 3rem;
   --jb-loading-color: #a6c8ff;
 }

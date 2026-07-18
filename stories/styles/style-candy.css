@@ -1,17 +1,17 @@
 jb-loading.candy-style {
-  --jb-loading-width: 3rem;
-  --jb-loading-height: 3rem;
+  --jb-loading-width: 2rem;
+  --jb-loading-height: 2rem;
   --jb-loading-color: var(--jb-focus-color);
 }
 
 jb-loading.candy-style.small-loading {
-  --jb-loading-width: 1.75rem;
-  --jb-loading-height: 1.75rem;
+  --jb-loading-width: 1.125rem;
+  --jb-loading-height: 1.125rem;
   --jb-loading-color: #f97316;
 }
 
 jb-loading.candy-style.large-loading {
-  --jb-loading-width: 4.5rem;
-  --jb-loading-height: 4.5rem;
+  --jb-loading-width: 2.75rem;
+  --jb-loading-height: 2.75rem;
   --jb-loading-color: #a855f7;
 }
