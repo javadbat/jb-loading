@@ -30,6 +30,6 @@
 		"url": "git@github.com:javadbat/jb-loading.git"
   },
   "dependencies": {
-    "jb-loading": ">=1.7.0"
+    "jb-loading": "^1.7.0"
   }
 }
