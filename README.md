@@ -14,18 +14,19 @@ SVG loading spinner web component.
 
 ## When to use
 
-Use `jb-loading` for a visual loading indicator inside a button, empty state, panel, or page area.
+Use `jb-loading` for a visual loading indicator inside a button, empty state, panel, or page area. [See it in the component examples](https://javadbat.github.io/design-system/?path=/story/components-jbloading--overview).
 
 Pair it with text, `aria-busy`, or `aria-live` on the surrounding UI when users need an accessible loading announcement.
 
 ## Demo
 
-- [GitHub Pages](https://javadbat.github.io/jb-loading/)
-- [Storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
+[Try the Storybook examples](https://javadbat.github.io/design-system/?path=/story/components-jbloading--overview) or [open the GitHub Pages demo](https://javadbat.github.io/jb-loading/).
 
 ## Using With JS Frameworks
 
 <a href="https://github.com/javadbat/jb-loading/tree/main/react" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/React.js-jb--loading%2Freact-000.svg?logo=react&logoColor=%2361DAFB" height="30" /></a>
+
+See the [React API and examples](https://javadbat.github.io/design-system/?path=/docs/components-jbloading-react-readme--docs).
 
 Other integrations: <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#angular" target="_blank" rel="noopener noreferrer">Angular</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#vue" target="_blank" rel="noopener noreferrer">Vue</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#nuxt" target="_blank" rel="noopener noreferrer">Nuxt</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#svelte" target="_blank" rel="noopener noreferrer">Svelte</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#sveltekit" target="_blank" rel="noopener noreferrer">SvelteKit</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#solidjs" target="_blank" rel="noopener noreferrer">SolidJS</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#lit" target="_blank" rel="noopener noreferrer">Lit</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#nextjs" target="_blank" rel="noopener noreferrer">Next.js</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#astro" target="_blank" rel="noopener noreferrer">Astro</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#blazor" target="_blank" rel="noopener noreferrer">Blazor</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#server-rendered-templates" target="_blank" rel="noopener noreferrer">Server-rendered templates</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#wordpress" target="_blank" rel="noopener noreferrer">WordPress</a> · <a href="https://javadbat.github.io/design-system/?path=/docs/getting-started-framework-integration--docs#alpinejs-and-htmx" target="_blank" rel="noopener noreferrer">Alpine.js and HTMX</a>
 
@@ -68,6 +69,8 @@ import 'jb-loading';
 
 ### Events
 
+The lifecycle example verifies both events dispatched when the component connects. [Demo](https://javadbat.github.io/design-system/?path=/story/components-jbloading--lifecycle-events)
+
 | event | detail | description |
 | --- | --- | --- |
 | `load` | none | Dispatched from `connectedCallback` when the component is connected. |
@@ -75,7 +78,7 @@ import 'jb-loading';
 
 ## Slots and CSS parts
 
-`jb-loading` does not expose public slots. It exposes these CSS parts:
+`jb-loading` does not expose public slots. Its CSS parts are demonstrated in the [style gallery](https://javadbat.github.io/design-system/?path=/story/components-jbloading-style--gallery):
 
 | CSS part | description |
 | --- | --- |
@@ -85,7 +88,7 @@ import 'jb-loading';
 
 ## Custom style
 
-For complete styling guidance, live examples, and copyable style recipes, see [Styling](https://javadbat.github.io/design-system/?path=/docs/components-jbloading-styling).
+For complete styling guidance, live examples, and copyable style recipes, see the [Styling guide](https://javadbat.github.io/design-system/?path=/docs/components-jbloading-styling) and [style gallery](https://javadbat.github.io/design-system/?path=/story/components-jbloading-style--gallery).
 
 Set CSS variables in the parent scope of the component.
 
@@ -105,7 +108,7 @@ jb-loading {
 
 ## Accessibility notes
 
-`jb-loading` is a visual spinner. Add accessible loading semantics to the surrounding UI when needed.
+`jb-loading` is a visual spinner. Add accessible loading semantics to the surrounding UI when needed. [Accessible usage example](https://javadbat.github.io/design-system/?path=/story/components-jbloading--normal)
 
 ```html
 <div aria-busy="true" aria-live="polite">

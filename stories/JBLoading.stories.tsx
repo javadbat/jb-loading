@@ -1,6 +1,7 @@
-import React, { type CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 import { JBLoading } from 'jb-loading/react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { expect, fn, waitFor } from 'storybook/test';
 
 
 const meta = {
@@ -15,6 +16,22 @@ export const Normal: Story = {
     style:{width:'5rem', height:'5rem'}
   }
 };
+
+export const LifecycleEvents: Story = {
+  args: {
+    onLoad: fn(),
+    onInit: fn(),
+    style: { width: '5rem', height: '5rem' },
+  } as unknown as Story['args'],
+  play: async ({ args }) => {
+    const lifecycleArgs = args as unknown as { onInit: ReturnType<typeof fn> };
+    await waitFor(() => {
+      expect(args.onLoad).toHaveBeenCalled();
+      expect(lifecycleArgs.onInit).toHaveBeenCalled();
+    });
+  },
+};
+
 export const CustomColor: Story = {
   args: {
     style:{width:'5rem', height:'5rem', "--jb-loading-color":"var(--jb-primary)"} as CSSProperties

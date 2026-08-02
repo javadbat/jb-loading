@@ -9,9 +9,7 @@ React wrapper for `jb-loading`, an SVG loading spinner web component.
 
 ## Demo
 
-- [Storybook](https://javadbat.github.io/design-system/?path=/docs/components-jbloading)
-- [CodeSandbox preview](https://3f63dj.csb.app/samples/jb-loading)
-- [CodeSandbox editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx)
+Try the [component examples](https://javadbat.github.io/design-system/?path=/story/components-jbloading--overview), read the [React API docs](https://javadbat.github.io/design-system/?path=/docs/components-jbloading-react-readme--docs), or open the [CodeSandbox preview](https://3f63dj.csb.app/samples/jb-loading) and [editor](https://codesandbox.io/p/sandbox/jb-design-system-3f63dj?file=%2Fsrc%2Fsamples%2FJBLoading.tsx).
 
 ## Installation
 
@@ -27,13 +25,15 @@ import { JBLoading } from 'jb-loading/react';
 
 ## When to use
 
-Use `JBLoading` for a visual loading indicator inside React buttons, panels, empty states, or page regions.
+Use `JBLoading` for a visual loading indicator inside React buttons, panels, empty states, or page regions. [Demo](https://javadbat.github.io/design-system/?path=/story/components-jbloading--normal)
 
 Pair it with text, `aria-busy`, or `aria-live` on the surrounding UI when users need an accessible loading announcement.
 
 ## Props
 
 `JBLoading` forwards standard React element props to the underlying `<jb-loading>` element. It does not define component-specific props.
+
+The wrapper has no component-specific attributes or properties; use standard props such as `className`, `style`, and `ref`. [Sizing demo](https://javadbat.github.io/design-system/?path=/story/components-jbloading--custom-size)
 
 ```jsx
 <div aria-busy="true" aria-live="polite">
@@ -42,9 +42,13 @@ Pair it with text, `aria-busy`, or `aria-live` on the surrounding UI when users 
 </div>
 ```
 
+## Events
+
+The wrapper forwards the web component's `onLoad` and `onInit` lifecycle events. [Demo](https://javadbat.github.io/design-system/?path=/story/components-jbloading--lifecycle-events)
+
 ## Custom style
 
-The React component uses the same CSS variables as the web component.
+The React component uses the same CSS variables as the web component. See the shared [web-component styling guidance](../README.md#custom-style), the [styling guide](https://javadbat.github.io/design-system/?path=/story/components-jbloading-styling--docs), and the [style gallery](https://javadbat.github.io/design-system/?path=/story/components-jbloading-style--gallery).
 
 | CSS variable name | description |
 | --- | --- |
@@ -62,15 +66,15 @@ The React component uses the same CSS variables as the web component.
 
 ## Slots and CSS parts
 
-`JBLoading` does not expose content slots. Style the spinner with the same CSS variables as the web component.
+`JBLoading` does not expose content slots. Style the spinner with the same CSS variables and CSS parts as the web component; see the [parts gallery](https://javadbat.github.io/design-system/?path=/story/components-jbloading-style--gallery).
 
 ## Accessibility notes
 
-The spinner is visual only. Add loading text, `aria-busy`, or `aria-live` to the surrounding React UI when the loading state must be announced.
+The spinner is visual only. Add loading text, `aria-busy`, or `aria-live` to the surrounding React UI when the loading state must be announced. [Usage demo](https://javadbat.github.io/design-system/?path=/story/components-jbloading--normal)
 
 ## Shared Documentation
 
-For web-component behavior, events, CSS variables, and the full API, see [`jb-loading`](https://github.com/javadbat/jb-loading).
+For web-component behavior, events, CSS variables, and the full API, see the shared [`jb-loading` documentation](../README.md).
 
 ## AI agent notes
 
