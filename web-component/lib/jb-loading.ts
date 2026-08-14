@@ -1,9 +1,10 @@
 import CSS from './jb-loading.css';
 import VariablesCSS from './variables.css';
 import {registerDefaultVariables} from 'jb-core/theme';
+import { JBBaseComponent } from 'jb-core';
 import { renderHTML } from './render';
 
-export class JBLoadingWebComponent extends HTMLElement {
+export class JBLoadingWebComponent extends JBBaseComponent {
   constructor() {
     super();
     this.initWebComponent();
@@ -49,7 +50,6 @@ export class JBLoadingWebComponent extends HTMLElement {
   //   }
 }
 
-const myElementNotExists = !customElements.get('jb-loading');
-if (myElementNotExists) {
-  window.customElements.define('jb-loading', JBLoadingWebComponent);
+if (globalThis.customElements && !globalThis.customElements.get('jb-loading')) {
+  globalThis.customElements.define('jb-loading', JBLoadingWebComponent);
 }

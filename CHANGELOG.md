@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.1] - 2026-08-14
+
+### Changed
+
+- Extended the SSR-safe `JBBaseComponent` and guarded custom-element registration so the package can be imported without browser globals.
+- Preserved the React client boundary in the published React entry point and generated bundles.
+
 ## [1.8.0] - 2026-07-14
 
 ### Added
