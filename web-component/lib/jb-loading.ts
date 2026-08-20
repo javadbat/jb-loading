@@ -51,3 +51,9 @@ export class JBLoadingWebComponent extends JBBaseComponent {
 }
 
 defineWebComponent('jb-loading', JBLoadingWebComponent);
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "jb-loading": JBLoadingWebComponent;
+  }
+}
