@@ -1,7 +1,7 @@
+import { defineWebComponent, JBBaseComponent } from "jb-core";
 import CSS from './jb-loading.css';
 import VariablesCSS from './variables.css';
 import {registerDefaultVariables} from 'jb-core/theme';
-import { JBBaseComponent } from 'jb-core';
 import { renderHTML } from './render';
 
 export class JBLoadingWebComponent extends JBBaseComponent {
@@ -50,6 +50,4 @@ export class JBLoadingWebComponent extends JBBaseComponent {
   //   }
 }
 
-if (globalThis.customElements && !globalThis.customElements.get('jb-loading')) {
-  globalThis.customElements.define('jb-loading', JBLoadingWebComponent);
-}
+defineWebComponent('jb-loading', JBLoadingWebComponent);
