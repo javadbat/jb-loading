@@ -27,7 +27,7 @@
   "types": "./dist/JBLoading.d.ts",
   "repository": {
 		"type": "git",
-		"url": "git@github.com:javadbat/jb-loading.git"
+		"url": "https://github.com/javadbat/jb-loading.git"
   },
   "dependencies": {
     "jb-loading": "^1.7.0"
