@@ -1,9 +1,11 @@
 # Changelog
 
-## Unreleased
+## [2.0.0] - 2026-09-01
 
 ### Changed
 
+- Added `primary`, `secondary`, `neutral`, `content-inverse`, `content-primary`, and `content-secondary` color variants, with `neutral` as the default.
+- Added `xs`, `sm`, `md`, `lg`, and `xl` size variants with a `md` (1.5rem) default; width and height CSS variables remain available for custom sizing.
 - Made custom-element module evaluation SSR-safe by extending `JBBaseComponent` where needed and registering elements through the shared `defineWebComponent()` helper; raised the minimum `jb-core` version to `0.35.0`.
 
 ## [1.8.1] - 2026-08-14

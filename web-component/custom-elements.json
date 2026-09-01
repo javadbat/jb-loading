@@ -8,14 +8,29 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "SVG loading spinner web component that fills its host size and is customized with CSS variables.",
+          "description": "SVG loading spinner web component with xs, sm, md, lg, and xl size variants.",
           "name": "JBLoadingWebComponent",
           "tagName": "jb-loading",
           "customElement": true,
           "superclass": {
             "name": "HTMLElement"
           },
-          "attributes": [],
+          "attributes": [
+            {
+              "name": "size",
+              "description": "Loading spinner size variant. Defaults to md.",
+              "type": {
+                "text": "\"xs\" | \"sm\" | \"md\" | \"lg\" | \"xl\""
+              }
+            },
+            {
+              "name": "color",
+              "description": "Loading spinner color variant. Defaults to neutral.",
+              "type": {
+                "text": "\"primary\" | \"secondary\" | \"neutral\" | \"content-inverse\" | \"content-primary\" | \"content-secondary\""
+              }
+            }
+          ],
           "members": [],
           "methods": [],
           "events": [
@@ -49,12 +64,56 @@
               "description": "Spinner stroke color."
             },
             {
+              "name": "--jb-loading-color-primary",
+              "description": "Color of the primary variant."
+            },
+            {
+              "name": "--jb-loading-color-secondary",
+              "description": "Color of the secondary variant."
+            },
+            {
+              "name": "--jb-loading-color-neutral",
+              "description": "Color of the neutral variant."
+            },
+            {
+              "name": "--jb-loading-color-content-inverse",
+              "description": "Color of the content-inverse variant."
+            },
+            {
+              "name": "--jb-loading-color-content-primary",
+              "description": "Color of the content-primary variant."
+            },
+            {
+              "name": "--jb-loading-color-content-secondary",
+              "description": "Color of the content-secondary variant."
+            },
+            {
               "name": "--jb-loading-width",
               "description": "Host width."
             },
             {
               "name": "--jb-loading-height",
               "description": "Host height."
+            },
+            {
+              "name": "--jb-loading-size-xs",
+              "description": "Size of the xs variant."
+            },
+            {
+              "name": "--jb-loading-size-sm",
+              "description": "Size of the sm variant."
+            },
+            {
+              "name": "--jb-loading-size-md",
+              "description": "Size of the md variant."
+            },
+            {
+              "name": "--jb-loading-size-lg",
+              "description": "Size of the lg variant."
+            },
+            {
+              "name": "--jb-loading-size-xl",
+              "description": "Size of the xl variant."
             }
           ]
         }

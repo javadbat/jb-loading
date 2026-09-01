@@ -1,7 +1,61 @@
-:host{
+:host {
   /* Size */
-  --width: var(--jb-loading-width, 100%);
-  --height: var(--jb-loading-height, 100%);
+  --loading-size: var(--jb-loading-size-md, 1.5rem);
+  --width: var(--jb-loading-width, var(--loading-size));
+  --height: var(--jb-loading-height, var(--loading-size));
+  --loading-stroke-width: 0.375rem;
+
   /* Theme/Color */
-  --loading-color:var(--jb-loading-color, var(--jb-neutral));
+  --loading-color: var(--jb-loading-color, var(--jb-neutral));
+}
+
+/* Color variants */
+:host([color="primary"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-primary, var(--jb-primary, var(--jb-neutral))));
+}
+
+:host([color="secondary"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-secondary, var(--jb-secondary, var(--jb-neutral))));
+}
+
+:host([color="neutral"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-neutral, var(--jb-neutral)));
+}
+
+:host([color="content-inverse"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-content-inverse, var(--jb-content-inverse, var(--jb-neutral))));
+}
+
+:host([color="content-primary"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-content-primary, var(--jb-content-primary, var(--jb-neutral))));
+}
+
+:host([color="content-secondary"]) {
+  --loading-color: var(--jb-loading-color, var(--jb-loading-color-content-secondary, var(--jb-content-secondary, var(--jb-neutral))));
+}
+
+/* Size variants */
+:host([size="xs"]) {
+  --loading-size: var(--jb-loading-size-xs, 1rem);
+  --loading-stroke-width: 0.25rem;
+}
+
+:host([size="sm"]) {
+  --loading-size: var(--jb-loading-size-sm, 1.25rem);
+  --loading-stroke-width: 0.25rem;
+}
+
+:host([size="md"]) {
+  --loading-size: var(--jb-loading-size-md, 1.5rem);
+  --loading-stroke-width: 0.375rem;
+}
+
+:host([size="lg"]) {
+  --loading-size: var(--jb-loading-size-lg, 2rem);
+  --loading-stroke-width: 0.5rem;
+}
+
+:host([size="xl"]) {
+  --loading-size: var(--jb-loading-size-xl, 3rem);
+  --loading-stroke-width: 0.5rem;
 }

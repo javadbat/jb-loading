@@ -2,6 +2,9 @@
     display: block;
     width: var(--width);
     height: var(--height);
+    max-width: 100%;
+    max-height: 100%;
+    color:var(--loading-color);
 }
 
 .jb-loading-web-component {
@@ -12,8 +15,8 @@
             fill: transparent;
 
             circle {
-                stroke: var(--loading-color);
-                stroke-width: 0.5rem;
+                stroke: currentColor;
+                stroke-width: var(--loading-stroke-width);
                 stroke-linecap: round;
                 stroke-dasharray: 1px 3.125rem;
                 animation: loading 1s infinite ease-in-out;

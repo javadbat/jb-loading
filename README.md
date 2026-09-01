@@ -57,7 +57,10 @@ import 'jb-loading';
 
 ### Attributes
 
-`jb-loading` does not currently define public HTML attributes.
+| attribute | values | default | description |
+| --- | --- | --- | --- |
+| `size` | `xs`, `sm`, `md`, `lg`, `xl` | `md` | Sets the spinner size. |
+| `color` | `primary`, `secondary`, `neutral`, `content-inverse`, `content-primary`, `content-secondary` | `neutral` | Sets the spinner color. |
 
 ### Properties
 
@@ -95,8 +98,19 @@ Set CSS variables in the parent scope of the component.
 | CSS variable name | description |
 | --- | --- |
 | `--jb-loading-color` | Spinner stroke color. |
-| `--jb-loading-width` | Host width. Default is `100%`. |
-| `--jb-loading-height` | Host height. Default is `100%`. |
+| `--jb-loading-color-primary` | Color of the `primary` variant. |
+| `--jb-loading-color-secondary` | Color of the `secondary` variant. |
+| `--jb-loading-color-neutral` | Color of the `neutral` variant. |
+| `--jb-loading-color-content-inverse` | Color of the `content-inverse` variant. |
+| `--jb-loading-color-content-primary` | Color of the `content-primary` variant. |
+| `--jb-loading-color-content-secondary` | Color of the `content-secondary` variant. |
+| `--jb-loading-width` | Host width. Defaults to the selected size. |
+| `--jb-loading-height` | Host height. Defaults to the selected size. |
+| `--jb-loading-size-xs` | Size of the `xs` variant. Defaults to `1rem`. |
+| `--jb-loading-size-sm` | Size of the `sm` variant. Defaults to `1.25rem`. |
+| `--jb-loading-size-md` | Size of the `md` variant. Defaults to `1.5rem`. |
+| `--jb-loading-size-lg` | Size of the `lg` variant. Defaults to `2rem`. |
+| `--jb-loading-size-xl` | Size of the `xl` variant. Defaults to `3rem`. |
 
 ```css
 jb-loading {
@@ -126,7 +140,7 @@ jb-loading {
 ## AI agent notes
 
 - Import `jb-loading` once before using `<jb-loading>`.
-- Do not expect attributes, properties, methods, or slots; customize with CSS variables and the documented CSS parts.
+- The `size` attribute supports `xs`, `sm`, `md`, `lg`, and `xl`; it defaults to `md`.
 - Set size with `--jb-loading-width` and `--jb-loading-height` or you can set width/height directly.
 - Set color with `--jb-loading-color`.
 - Add accessible loading text or state outside the component when the loading state must be announced.
