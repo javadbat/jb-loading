@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0] - 2026-09-03
+
+### Changed
+
+- Aligned the package release with the coordinated JB Design System standardization release.
+
 ## [2.0.0] - 2026-09-01
 
 ### Changed
