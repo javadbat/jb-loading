@@ -39,7 +39,7 @@
   },
   "customElements": "web-component/custom-elements.json",
   "dependencies": {
-    "jb-core":"^0.37.0"
+    "jb-core":"^0.36.0"
   },
   "repository": {
 		"type": "git",
